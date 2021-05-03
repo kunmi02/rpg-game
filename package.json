@@ -1,0 +1,44 @@
+{
+  "name": "rpg-game",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode=development --watch",
+    "build": "webpack --mode=production",
+    "start": "npm run open",
+    "server": "webpack serve",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"sleepms 1000 && open http://localhost:1234/dist\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunmi02/rpg-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunmi02/rpg-game/issues"
+  },
+  "homepage": "https://github.com/kunmi02/rpg-game#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^8.1.1",
+    "css-loader": "^5.2.4",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "http-server": "^0.12.3",
+    "mini-css-extract-plugin": "^1.5.0",
+    "sleep-ms": "^2.0.1",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.2",
+    "phaser": "^3.54.0"
+  }
+}
