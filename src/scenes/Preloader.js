@@ -87,6 +87,11 @@ export default class PreloaderScene extends Phaser.Scene {
 
     this.timedEvent = this.time.delayedCall(3000, this.ready, [], this);
 
+    // map tiles
+    this.load.image('tiles', 'assets/map/spritesheet.png');
+    // map in json format
+    this.load.tilemapTiledJSON('map', 'assets/map/map.json');
+    
     this.load.image('phaserLogo', 'assets/logo.png');
     this.load.image('btn-hover', 'assets/buttons/buttonHovered.png');
     // this.load.image('btn1', 'assets/buttons/b1.png');

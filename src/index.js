@@ -43,12 +43,15 @@ class Game extends Phaser.Game {
   constructor() {
     super({
       type: Phaser.AUTO,
-      width: 800,
-      height: 600,
+      width: 320, //800,
+      height: 240, //600,
+      zoom: 2,
+      pixelArt: true,
       physics: {
         default: 'arcade',
         arcade: {
-          debug: false,
+          debug: true,
+          gravity: { y: 0 }
         },
       },
     });
