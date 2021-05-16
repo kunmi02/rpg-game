@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode=development --watch",
     "build": "webpack --mode=production",
-    "start": "webpack --watch --host=0.0.0.0 --port=$PORT",
+    "start": "npm run build",
     "server": "webpack serve",
     "open": "concurrently \"http-server -a localhost -p 1234\" \"sleepms 1000 && open http://localhost:1234/dist\""
   },
