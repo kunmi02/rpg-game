@@ -11,15 +11,15 @@ export default class PreloaderScene extends Phaser.Scene {
 
   preload() {
     // add loading text to the preload page
-    this.add.text(150, 200, 'If the game stuck at loading...Press F5', {
-      fontSize: '24px',
+    this.add.text(20, 20, 'If the game stuck at loading...Reload Page!', {
+      fontSize: '9px',
       fill: '#FFF',
     }).setDepth(5);
     // add background image to the preloader scene
-    this.add.image(400, 300, 'bg');
+    this.add.image(200, 100, 'bg');
 
     // add phaser logo
-    this.add.image(400, 200, 'logo');
+    this.add.image(180, 100, 'logo').setScale(.5);
 
     // display progress bar
     const progressBar = this.add.graphics();
@@ -34,7 +34,7 @@ export default class PreloaderScene extends Phaser.Scene {
       y: height / 2 - 50,
       text: 'Loading...',
       style: {
-        font: '20px monospace',
+        font: '15px monospace',
         fill: '#ffffff',
       },
     });
@@ -129,7 +129,8 @@ export default class PreloaderScene extends Phaser.Scene {
   }
 
   ready() {
-    this.scene.start('Game');
+    // this.scene.start('Title');
+    this.scene.start('Credits');
     this.readyCount +=1;
     if (this.readyCount === 3) {
       this.scene.start('Title');

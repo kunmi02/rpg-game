@@ -1,0 +1,13 @@
+/* body {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+} */
+
+#form {
+  position: absolute;
+  top: 280px;
+  left: 220px;
+  display: none;
+  width: 242px;
+}

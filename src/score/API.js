@@ -3,6 +3,7 @@ const scoreSystem = (() => {
   const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${key}/scores/`;
   const info = {};
   const postScores = () => {
+    if (info.score > 0){
     const data = info;
     fetch(url, {
       method: 'POST',
@@ -14,6 +15,7 @@ const scoreSystem = (() => {
     }).then((res) => {
       res.json();
     }).then((json) => json.result);
+  }
   };
   const namer = (name) => {
     info.user = name;

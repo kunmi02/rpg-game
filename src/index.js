@@ -6,6 +6,7 @@ import PreloaderScene from './scenes/Preloader';
 import TitleScene from './scenes/TitleScene';
 import OptionsScene from './scenes/OptionsScene';
 import CreditsScene from './scenes/CreditsScene';
+import InputScene from './scenes/Input';
 import Model from './Model';
 
 // const canvas = document.getElementById('game-canvas');
@@ -61,7 +62,7 @@ class Game extends Phaser.Game {
     this.scene.add('Preloader', PreloaderScene);
     this.scene.add('Title', TitleScene);
     this.scene.add('Credits', CreditsScene)
-    // this.scene.add('Input', InputScene);
+    this.scene.add('Input', InputScene);
     this.scene.add('Game', GameScene);
     // this.scene.add('Score', ScoreScene);
     this.scene.add('Options', OptionsScene);

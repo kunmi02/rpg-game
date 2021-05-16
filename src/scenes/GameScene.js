@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import { Align } from '../util/align';
+import scoreSystem from '../score/API';
 import createBoyAnims from '../anims/Boy';
 import gameOptions from '../Objects/gameOptions';
 class GameScene extends Phaser.Scene {
@@ -109,14 +110,25 @@ update(){
           this.player.body.setVelocity(0);
         }  
 }
+
+
 BombZone(player, zone) {        
 	// bomb Zone
   zone.x = Phaser.Math.RND.between(0, this.physics.world.bounds.width);
   zone.y = Phaser.Math.RND.between(0, this.physics.world.bounds.height);
   
   // shake the world
-  this.cameras.main.shake(800);
+  // this.cameras.main.shake(800);
+  // player.setTint(0xff0000);
+  // this.physics.pause();
   
+  this.add.text(80, 100, 'GAME OVER!!', {
+    fontSize: '30px',
+    fill: '#FF0000',
+  }).setDepth(5);
+
+  this.endGame(player, this.score)
+  // this.startScene(true)
     }
 
 collectStar (player, star)
@@ -124,6 +136,23 @@ collectStar (player, star)
     star.disableBody(true, true);
     this.score += 100;
     this.scoreText.setText('Score: ' + this.score);
+}
+endGame(player){
+  this.cameras.main.shake(900);
+  player.setTint(0xff0000);
+  this.physics.pause();
+  scoreSystem.scorer(this.score);
+//   scoreSystem.namer()
+//   if (this.score > 0){
+//   scoreSystem.postScores();
+// }
+this.time.addEvent({
+  delay: 3000,
+  loop: false,
+  callback: () => {
+      this.scene.start("Input");
+  }
+})
 }
 
 }
