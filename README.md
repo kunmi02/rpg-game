@@ -34,13 +34,13 @@
 1- Clone the repository
 
 ```
-    git clone https://github.com/AbdelrhmanAmin/Jumper-Man.git
+    git clone https://github.com/kunmi02/rpg-game.git
 ```
 
 2- Open the folder on VS Code.
 
 ```
-    cd Jumper-Man
+    cd rpg-game
     code.
 ```
 
@@ -77,11 +77,11 @@ Run the next on your terminal in the repository folder:
 
 ## Author
 
-😎 **Abdo Amin**
+😎 **Azeez Ibrahim**
 
-- GitHub: [@Abdelrhman-Amin](https://github.com/AbdelrhmanAmin)
-- Twitter: [@Abdo Amin](https://twitter.com/AbdoAmi60489112)
-- LinkedIn: [@Abdo Amin](https://www.linkedin.com/in/abdo-amin-ab786a1b0/)
+- GitHub: [@kunmi02](https://github.com/kunmi02)
+<!-- - Twitter: [@Abdo Amin](https://twitter.com/AbdoAmi60489112)
+- LinkedIn: [@Abdo Amin](https://www.linkedin.com/in/abdo-amin-ab786a1b0/) -->
 
 ## Show your support
 
