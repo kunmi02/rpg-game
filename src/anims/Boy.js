@@ -20,20 +20,20 @@ const createBoyAnims = (anims = Phaser.Animations.AnimationManager) => {
     key: 'right',
     frames: anims.generateFrameNumbers('dude', { start: 5, end: 8 }),
     frameRate: 10,
-    repeat: -1
-});
+    repeat: -1,
+  });
 
-anims.create({
+  anims.create({
     key: 'up',
-    frames: [ { key: 'dude', frame: 4 } ],
-    frameRate: 10
-});
+    frames: [{ key: 'dude', frame: 4 }],
+    frameRate: 10,
+  });
 
-anims.create({
+  anims.create({
     key: 'left',
     frames: anims.generateFrameNumbers('dude', { start: 0, end: 5 }),
     frameRate: 10,
-    repeat: -1
-});
+    repeat: -1,
+  });
 };
 export default createBoyAnims;

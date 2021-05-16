@@ -17,7 +17,7 @@
 ## Live Demo
 
 **If the game take too long to load OR stuck at 91% do reload your the browser page** <br>
-[Live Demo Link](https://stoic-bhaskara-99dd55.netlify.app/)
+[Live Demo Link](none)
 
 
 ### How to play

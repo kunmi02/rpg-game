@@ -26,7 +26,7 @@ import Model from './Model';
 //       debug: true
 //     }
 //   },
-  
+
 //   scene: [
 //     BootScene,
 //     PreloaderScene,
@@ -35,7 +35,7 @@ import Model from './Model';
 //     TitleScene,
 //     OptionsScene
 //   ]
-  
+
 // };
 
 // window.game = new Game(config);
@@ -44,15 +44,15 @@ class Game extends Phaser.Game {
   constructor() {
     super({
       type: Phaser.AUTO,
-      width: 320, //800,
-      height: 240, //600,
+      width: 320, // 800,
+      height: 240, // 600,
       zoom: 2,
       pixelArt: true,
       physics: {
         default: 'arcade',
         arcade: {
           debug: true,
-          gravity: { y: 0 }
+          gravity: { y: 0 },
         },
       },
     });
@@ -61,7 +61,7 @@ class Game extends Phaser.Game {
     this.scene.add('Boot', BootScene);
     this.scene.add('Preloader', PreloaderScene);
     this.scene.add('Title', TitleScene);
-    this.scene.add('Credits', CreditsScene)
+    this.scene.add('Credits', CreditsScene);
     this.scene.add('Input', InputScene);
     this.scene.add('Game', GameScene);
     // this.scene.add('Score', ScoreScene);

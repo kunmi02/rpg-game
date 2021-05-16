@@ -19,7 +19,7 @@ export default class PreloaderScene extends Phaser.Scene {
     this.add.image(200, 100, 'bg');
 
     // add phaser logo
-    this.add.image(180, 100, 'logo').setScale(.5);
+    this.add.image(180, 100, 'logo').setScale(0.5);
 
     // display progress bar
     const progressBar = this.add.graphics();
@@ -91,7 +91,7 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.image('tiles', 'assets/map/spritesheet.png');
     // map in json format
     this.load.tilemapTiledJSON('map', 'assets/map/map.json');
-    
+
     this.load.image('phaserLogo', 'assets/logo.png');
     this.load.image('btn-hover', 'assets/buttons/buttonHovered.png');
     // this.load.image('btn1', 'assets/buttons/b1.png');
@@ -99,13 +99,12 @@ export default class PreloaderScene extends Phaser.Scene {
     // this.load.image('btn2', 'assets/buttons/b2.png');
     this.load.image('dog', 'assets/dog.png');
     this.load.image('sky', 'assets/sky.png');
-    this.load.spritesheet('dude', 
-        'assets/dude.png',
-        { frameWidth: 32, frameHeight: 48 }
-    );
+    this.load.spritesheet('dude',
+      'assets/dude.png',
+      { frameWidth: 32, frameHeight: 48 });
     // this.load.image('bomb', 'assets/dog.png');
     this.load.image('ground', 'assets/platform.png');
-    this.load.image('star', 'assets/star.png')
+    this.load.image('star', 'assets/star.png');
     // this.load.image('sky', 'assets/layers/parallax-mountain-bg.png');
     this.load.image('platform', 'assets/stone.png');
     this.load.image('spikes', 'assets/bomb.png');
@@ -114,7 +113,7 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.image('mountains', 'assets/layers/parallax-mountain-mountains.png');
     this.load.image('trees', 'assets/layers/parallax-mountain-trees.png');
     this.load.image('trees-far', 'assets/layers/parallax-mountain-foreground-trees.png');
-    
+
     // this.load.image('mountain-far', 'assets/layers/parallax-mountain-montain-far.png');
     // this.load.image('mountains', 'assets/layers/parallax-mountain-mountains.png');
     // this.load.image('trees', 'assets/layers/parallax-mountain-trees.png');
@@ -129,12 +128,6 @@ export default class PreloaderScene extends Phaser.Scene {
   }
 
   ready() {
-    // this.scene.start('Title');
-    this.scene.start('Credits');
-    this.readyCount +=1;
-    if (this.readyCount === 3) {
-      this.scene.start('Title');
-      // console.log('Title scene about to start')
-    }
+    this.scene.start('Title');
   }
 }

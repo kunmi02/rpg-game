@@ -1,14 +1,14 @@
-import {Scene} from 'phaser';
+import { Scene } from 'phaser';
 
 class BootScene extends Scene {
   constructor() {
-    super("Boot");
+    super('Boot');
   }
-  
+
   preload() {
     // Load any assets here from your assets directory
     this.load.image('bg', 'assets/fairy-background-craft-pixel.png');
-    this.load.image('logo', 'assets/logo.png')
+    this.load.image('logo', 'assets/logo.png');
   }
 
   create() {

@@ -7,8 +7,8 @@ export default class InputScene extends Phaser.Scene {
   }
 
   create() {
-    const catbg = this.add.image(150, 80, 'logo').setScale(.2);
-    this.add.text(100, 120, "You did a great job, Evader!!!", {
+    this.add.image(150, 80, 'logo').setScale(0.2);
+    this.add.text(100, 120, 'You did a great job, Evader!!!', {
       color: '#FFF', fontFamily: 'Arial', fontSize: '12px ', fontWeight: '900',
     });
     const element = document.getElementById('form');
@@ -21,9 +21,8 @@ export default class InputScene extends Phaser.Scene {
           scoreSystem.namer(user.value);
           scoreSystem.postScores();
           this.scene.start('Title');
-        }
-        else{
-          window.alert('Enter a valid name')
+        } else {
+          window.alert('Enter a valid name');
         }
       }
     });

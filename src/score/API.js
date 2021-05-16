@@ -1,21 +1,21 @@
 const scoreSystem = (() => {
-  const key = '4A1oDEacyDE8mH3xM7JS'; //dragon slayer game key
+  const key = '4A1oDEacyDE8mH3xM7JS'; // dragon slayer game key
   const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${key}/scores/`;
   const info = {};
   const postScores = () => {
-    if (info.score > 0){
-    const data = info;
-    fetch(url, {
-      method: 'POST',
-      mode: 'cors',
-      headers: {
-        'content-type': 'application/json; charset=UTF-8',
-      },
-      body: JSON.stringify(data),
-    }).then((res) => {
-      res.json();
-    }).then((json) => json.result);
-  }
+    if (info.score > 0) {
+      const data = info;
+      fetch(url, {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'content-type': 'application/json; charset=UTF-8',
+        },
+        body: JSON.stringify(data),
+      }).then((res) => {
+        res.json();
+      }).then((json) => json.result);
+    }
   };
   const namer = (name) => {
     info.user = name;
