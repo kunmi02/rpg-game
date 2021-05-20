@@ -5,9 +5,4 @@ export default class PreloaderScene extends Phaser.Scene {
     super('Score');
   }
 
-  // preload() {
-  // }
-
-  // create() {
-  // }
 }

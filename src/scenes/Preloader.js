@@ -94,18 +94,15 @@ export default class PreloaderScene extends Phaser.Scene {
 
     this.load.image('phaserLogo', 'assets/logo.png');
     this.load.image('btn-hover', 'assets/buttons/buttonHovered.png');
-    // this.load.image('btn1', 'assets/buttons/b1.png');
+    
     this.load.image('btn-default', 'assets/buttons/buttonDefault.png');
-    // this.load.image('btn2', 'assets/buttons/b2.png');
     this.load.image('dog', 'assets/dog.png');
     this.load.image('sky', 'assets/sky.png');
     this.load.spritesheet('dude',
       'assets/dude.png',
       { frameWidth: 32, frameHeight: 48 });
-    // this.load.image('bomb', 'assets/dog.png');
     this.load.image('ground', 'assets/platform.png');
     this.load.image('star', 'assets/star.png');
-    // this.load.image('sky', 'assets/layers/parallax-mountain-bg.png');
     this.load.image('platform', 'assets/stone.png');
     this.load.image('spikes', 'assets/bomb.png');
     this.load.image('sky', 'assets/layers/parallax-mountain-bg.png');
@@ -114,9 +111,6 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.image('trees', 'assets/layers/parallax-mountain-trees.png');
     this.load.image('trees-far', 'assets/layers/parallax-mountain-foreground-trees.png');
 
-    // this.load.image('mountain-far', 'assets/layers/parallax-mountain-montain-far.png');
-    // this.load.image('mountains', 'assets/layers/parallax-mountain-mountains.png');
-    // this.load.image('trees', 'assets/layers/parallax-mountain-trees.png');
     this.load.image('spacebar', 'assets/buttons/spacebar.png');
     this.load.image('checkedBox', 'assets/ui/blue_boxCheckmark.png');
     this.load.image('box', 'assets/ui/grey_box.png');
@@ -124,7 +118,6 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.audio('gameMusic', ['assets/Sounds/Game.mp3']);
     this.load.audio('jump', ['assets/Sounds/jump.wav']);
     this.load.audio('pickup', ['assets/Sounds/pickup.wav']);
-    // this.load.audio('bgMusic', ['assets/Sounds/huntingdog.ogg'])
   }
 
   ready() {

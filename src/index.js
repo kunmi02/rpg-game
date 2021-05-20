@@ -9,37 +9,6 @@ import CreditsScene from './scenes/CreditsScene';
 import InputScene from './scenes/Input';
 import Model from './Model';
 
-// const canvas = document.getElementById('game-canvas');
-// const model = new Model();
-// // this.globals = { model, bgMusic: null  };
-// const config = {
-//   type: Phaser.WEB_GL,
-//   width: 800,
-//   height: 600,
-//   canvas,
-//   // model,
-//   // globals,
-//   physics: {
-//     default: 'arcade',
-//     arcade: {
-//       // gravity: { y: 400 },
-//       debug: true
-//     }
-//   },
-
-//   scene: [
-//     BootScene,
-//     PreloaderScene,
-//     CreditsScene,
-//     GameScene,
-//     TitleScene,
-//     OptionsScene
-//   ]
-
-// };
-
-// window.game = new Game(config);
-
 class Game extends Phaser.Game {
   constructor() {
     super({

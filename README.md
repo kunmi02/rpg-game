@@ -2,7 +2,9 @@
 
 > It's a 2d game with a soldier lost in field filled with bomb mine, He has to collect the starts on the field to escape. The bomb mine are invincibl, soldier needs touse his instinct to evade the hidden the bombs on the field.
 
-![screenshot](./img.png)
+![screenshot](./menu_scene.png)
+
+![screenshot](./game_scene.png)
 
 ## Built With
 
@@ -18,6 +20,14 @@
 
 **If the game take too long to load OR stuck at 91% do reload your the browser page** <br>
 [Live Demo Link](https://bombevader.herokuapp.com/)
+
+
+## Game Design Document
+
+This is a game based on an endless running journey and the hero is a cute alien boy with a mission to collect as many scores as possible to come as number 1 on the leaderboard.
+He must avoid traps and falling or otherwise he meets his doom.
+The cute boy can jump once, twice, and thrice in midst of air defying rules of physics and allowing him to avoid falling to infinity or falling on the Deathbringer spikes.
+[Game Design Document (GDD) Link](./GDD.md)
 
 
 ### How to play

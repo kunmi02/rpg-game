@@ -7,9 +7,6 @@ class GameScene extends Phaser.Scene {
     super('Game');
   }
 
-  // preload() {
-  // }
-
   create() {
   // create the map
     const map = this.make.tilemap({ key: 'map' });
@@ -101,10 +98,6 @@ class GameScene extends Phaser.Scene {
     zone.x = Phaser.Math.RND.between(0, this.physics.world.bounds.width);
     zone.y = Phaser.Math.RND.between(0, this.physics.world.bounds.height);
 
-    // shake the world
-    // this.cameras.main.shake(800);
-    // player.setTint(0xff0000);
-    // this.physics.pause();
 
     this.add.text(80, 100, 'GAME OVER!!', {
       fontSize: '30px',
@@ -112,7 +105,6 @@ class GameScene extends Phaser.Scene {
     }).setDepth(5);
 
     this.endGame(player, this.score);
-  // this.startScene(true)
   }
 
   collectStar(player, star) {
@@ -126,10 +118,6 @@ class GameScene extends Phaser.Scene {
     player.setTint(0xff0000);
     this.physics.pause();
     scoreSystem.scorer(this.score);
-    //   scoreSystem.namer()
-    //   if (this.score > 0){
-    //   scoreSystem.postScores();
-    // }
     this.time.addEvent({
       delay: 3000,
       loop: false,
