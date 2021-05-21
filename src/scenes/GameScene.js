@@ -98,7 +98,6 @@ class GameScene extends Phaser.Scene {
     zone.x = Phaser.Math.RND.between(0, this.physics.world.bounds.width);
     zone.y = Phaser.Math.RND.between(0, this.physics.world.bounds.height);
 
-
     this.add.text(80, 100, 'GAME OVER!!', {
       fontSize: '30px',
       fill: '#FF0000',

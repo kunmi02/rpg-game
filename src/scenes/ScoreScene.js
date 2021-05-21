@@ -44,5 +44,4 @@ export default class PreloaderScene extends Phaser.Scene {
       });
     this.menuButton = new Button(this, 160, 200, 'btn-default', 'btn-hover', 'Menu', 'Title');
   }
-
 }
