@@ -94,7 +94,6 @@ export default class PreloaderScene extends Phaser.Scene {
 
     this.load.image('phaserLogo', 'assets/logo.png');
     this.load.image('btn-hover', 'assets/buttons/buttonHovered.png');
-    
     this.load.image('btn-default', 'assets/buttons/buttonDefault.png');
     this.load.image('dog', 'assets/dog.png');
     this.load.image('sky', 'assets/sky.png');
@@ -104,6 +103,7 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.image('ground', 'assets/platform.png');
     this.load.image('star', 'assets/star.png');
     this.load.image('platform', 'assets/stone.png');
+    this.load.image('scorebg', 'assets/scorebg.jpg');
     this.load.image('spikes', 'assets/bomb.png');
     this.load.image('sky', 'assets/layers/parallax-mountain-bg.png');
     this.load.image('mountain-far', 'assets/layers/parallax-mountain-montain-far.png');
@@ -121,6 +121,6 @@ export default class PreloaderScene extends Phaser.Scene {
   }
 
   ready() {
-    this.scene.start('Title');
+    this.scene.start('Score');
   }
 }
