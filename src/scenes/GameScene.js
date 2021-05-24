@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import scoreSystem from '../score/API';
 import createBoyAnims from '../anims/Boy';
+import { Align } from '../util/align';
 
 class GameScene extends Phaser.Scene {
   constructor() {
@@ -8,6 +9,8 @@ class GameScene extends Phaser.Scene {
   }
 
   create() {
+    const board = document.getElementById('score');
+    board.style.display = 'none';
   // create the map
     const map = this.make.tilemap({ key: 'map' });
 
@@ -98,11 +101,11 @@ class GameScene extends Phaser.Scene {
     zone.x = Phaser.Math.RND.between(0, this.physics.world.bounds.width);
     zone.y = Phaser.Math.RND.between(0, this.physics.world.bounds.height);
 
-    this.add.text(80, 100, 'GAME OVER!!', {
+    const game_over = this.add.text(80, 120, 'GAME OVER!!', {
       fontSize: '30px',
       fill: '#FF0000',
     }).setDepth(5);
-
+    Align.center(game_over, this);
     this.endGame(player, this.score);
   }
 

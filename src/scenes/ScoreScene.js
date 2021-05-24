@@ -12,7 +12,7 @@ export default class PreloaderScene extends Phaser.Scene {
     Align.scaleToGameW(catbg, 1.5, this);
     Align.center(catbg, this);
     const board = document.getElementById('score');
-    board.style.display = 'flex';
+    board.style.display = 'block';
     board.innerHTML = '';
     fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/4A1oDEacyDE8mH3xM7JS/scores/')
       .then((res) => res.json())
