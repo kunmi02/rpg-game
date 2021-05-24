@@ -1,6 +1,5 @@
 import Phaser from 'phaser';
-import GameScene from '../scenes/Game';
-import gameOptions from '../Objects/gameOptions';
+import GameScene from '../scenes/GameScene';
 import 'jest-expect-subclass';
 
 test('GameScene should be a subclass of Phaser.Scene', () => {

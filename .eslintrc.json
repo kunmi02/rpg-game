@@ -19,7 +19,8 @@
     "no-unused-expressions": "off",
     "func-names": "off",
     "no-unused-vars": "off",
-    "brace-style": "off"
+    "brace-style": "off",
+    "max-len": "off"
   },
   "ignorePatterns": ["dist/", "build/"]
 }

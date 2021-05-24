@@ -1,12 +1,13 @@
 import Api from '../score/API';
+
 import 'regenerator-runtime';
-const fetch = require("node-fetch");
+const fetch = require('node-fetch');
 
 // import { Fetch } from './jest-fetch-mock';
-const fetchMock = fetch
+const fetchMock = fetch;
 
 beforeEach(() => {
-    fetchMock.resetMocks();
+  fetchMock.resetMocks();
 });
 
 // beforeEach(() => {

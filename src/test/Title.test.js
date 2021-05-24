@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import TitleScene from '../scenes/Title';
+import TitleScene from '../scenes/TitleScene';
 import 'jest-expect-subclass';
 
 test('TitleScene should be a subclass of Phaser.Scene', () => {
