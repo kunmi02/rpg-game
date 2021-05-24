@@ -19,7 +19,7 @@
 ## Live Demo
 
 **If the game take too long to load OR stuck at 91% do reload your the browser page** <br>
-[Live Demo Link](https://bombevader.herokuapp.com/)
+[Live Demo Link](https://competent-wright-98a1cb.netlify.app/)
 
 
 ## Game Design Document
