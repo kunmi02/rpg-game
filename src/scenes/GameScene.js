@@ -11,7 +11,7 @@ class GameScene extends Phaser.Scene {
   create() {
     const board = document.getElementById('score');
     board.style.display = 'none';
-  // create the map
+    // create the map
     const map = this.make.tilemap({ key: 'map' });
 
     // first parameter is the name of the tilemap in tiled
@@ -101,11 +101,11 @@ class GameScene extends Phaser.Scene {
     zone.x = Phaser.Math.RND.between(0, this.physics.world.bounds.width);
     zone.y = Phaser.Math.RND.between(0, this.physics.world.bounds.height);
 
-    const game_over = this.add.text(80, 120, 'GAME OVER!!', {
+    const gameOver = this.add.text(80, 120, 'GAME OVER!!', {
       fontSize: '30px',
       fill: '#FF0000',
     }).setDepth(5);
-    Align.center(game_over, this);
+    Align.center(gameOver, this);
     this.endGame(player, this.score);
   }
 
