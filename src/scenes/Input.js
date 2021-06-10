@@ -22,7 +22,12 @@ export default class InputScene extends Phaser.Scene {
           scoreSystem.postScores();
           this.scene.start('Title');
         } else {
-          window.alert('Enter a valid name');
+          const element = document.getElementById('error');
+          element.style.display = 'none';
+          element.innerHTML = '';
+          const p = document.createElement('p');
+          p.textContent = 'Enter a valid name please';
+          element.appendChild(p);
         }
       }
     });
