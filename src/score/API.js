@@ -14,7 +14,7 @@ const scoreSystem = (() => {
         body: JSON.stringify(data),
       }).then((res) => {
         res.json();
-      }).then((json) => json.result);
+      }).then((json) => json);
     }
   };
   const namer = (name) => {
