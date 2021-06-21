@@ -90,8 +90,6 @@ Run the next on your terminal in the repository folder:
 😎 **Azeez Ibrahim**
 
 - GitHub: [@kunmi02](https://github.com/kunmi02)
-<!-- - Twitter: [@Abdo Amin](https://twitter.com/AbdoAmi60489112)
-- LinkedIn: [@Abdo Amin](https://www.linkedin.com/in/abdo-amin-ab786a1b0/) -->
 
 ## Show your support
 
